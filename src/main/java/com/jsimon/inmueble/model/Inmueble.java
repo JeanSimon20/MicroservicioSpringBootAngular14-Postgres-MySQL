@@ -22,7 +22,7 @@ public class Inmueble {
     @Column(name = "direccion", length = 500, nullable = false)
     private String direccion;
 
-    @Column(name = "foto", length = 1000, nullable = false)
+    @Column(name = "foto", nullable = true)
     private String picture;
 
     @Column(name = "precio", nullable = false)
