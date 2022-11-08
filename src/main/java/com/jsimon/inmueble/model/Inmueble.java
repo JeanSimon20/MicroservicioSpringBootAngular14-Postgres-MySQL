@@ -13,19 +13,19 @@ public class Inmueble {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", length = 150, nullable = false)
-    private String name;
+    @Column(name = "nombre", length = 150, nullable = false)
+    private String nombre;
 
-    @Column(name = "direction", length = 500, nullable = false)
-    private String direction;
+    @Column(name = "direccion", length = 500, nullable = false)
+    private String direccion;
 
     @Column(name = "picture", nullable = true)
     private String picture;
 
-    @Column(name = "price", nullable = false)
-    private Double price;
+    @Column(name = "precio", nullable = false)
+    private Double precio;
 
-    @Column(name = "fecha", nullable = false)
-    private LocalDateTime fecha;
+    @Column(name = "fecha_creacion", nullable = false)
+    private LocalDateTime fecha_creacion;
 
 }

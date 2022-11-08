@@ -46,9 +46,12 @@ public class SecurityConfig {
                 .csrf()
                 .disable()
                 .httpBasic()
-
+                .and()
+                .exceptionHandling()
+                .accessDeniedHandler(((request, response, accessDeniedException) -> {
+                    response.sendRedirect("https://definicion.de/wp-content/uploads/2009/02/error.png");
+                }))
                 .and()
                 .build();
-
     }
 }

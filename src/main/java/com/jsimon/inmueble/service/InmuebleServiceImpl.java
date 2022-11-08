@@ -18,7 +18,7 @@ public class InmuebleServiceImpl implements InmuebleService{
 
     @Override
     public Inmueble saveInmueble(Inmueble inmueble){
-        inmueble.setFecha(LocalDateTime.now());
+        inmueble.setFecha_creacion(LocalDateTime.now());
         return inmuebleRepository.save(inmueble);
     }
 
