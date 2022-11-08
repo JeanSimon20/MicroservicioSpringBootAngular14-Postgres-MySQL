@@ -1,9 +1,6 @@
 package com.jsimon.inmueble.model;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -16,18 +13,18 @@ public class Inmueble {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nombre", length = 150, nullable = false)
-    private String nombre;
+    @Column(name = "name", length = 150, nullable = false)
+    private String name;
 
-    @Column(name = "direccion", length = 500, nullable = false)
-    private String direccion;
+    @Column(name = "direction", length = 500, nullable = false)
+    private String direction;
 
-    @Column(name = "foto", nullable = true)
+    @Column(name = "picture", nullable = true)
     private String picture;
 
-    @Column(name = "precio", nullable = false)
-    private Double precio;
+    @Column(name = "price", nullable = false)
+    private Double price;
 
-    @Column(name = "fecha_creacion", nullable = false)
-    private LocalDateTime fechaCreacion;
+    @Column(name = "fecha", nullable = false)
+    private LocalDateTime fecha;
 }
