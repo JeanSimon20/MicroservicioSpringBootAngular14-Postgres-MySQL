@@ -27,4 +27,5 @@ public class Inmueble {
 
     @Column(name = "fecha", nullable = false)
     private LocalDateTime fecha;
+
 }
