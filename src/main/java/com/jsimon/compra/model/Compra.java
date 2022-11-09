@@ -27,7 +27,7 @@ public class Compra implements Serializable {
     @Column(name = "precio", nullable = false)
     private Double precio;
 
-    @Column(name = "fecha_compra",nullable = false)
-    private LocalDateTime fecha_compra;
+    @Column(name = "fechacompra",nullable = false)
+    private LocalDateTime fechacompra;
 
 }
